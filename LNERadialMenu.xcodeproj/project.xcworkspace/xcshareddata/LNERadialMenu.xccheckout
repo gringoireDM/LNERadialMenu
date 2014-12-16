@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F2777EDD-D8B3-430E-A92D-3E5ECA5A37C4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LNERadialMenu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>266C48A5591D38619ED40296D7383B030B809904</key>
+		<string>https://github.com/gringoireDM/LNERadialMenu.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LNERadialMenu.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>266C48A5591D38619ED40296D7383B030B809904</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gringoireDM/LNERadialMenu.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>266C48A5591D38619ED40296D7383B030B809904</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>266C48A5591D38619ED40296D7383B030B809904</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LNERadialMenu</string>
+		</dict>
+	</array>
+</dict>
+</plist>
