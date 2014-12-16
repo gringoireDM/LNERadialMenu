@@ -7,7 +7,6 @@
 //
 
 #import "LNERadialMenu.h"
-#import "AppDelegate.h"
 
 @interface LNERadialMenu(){
 	CGFloat maxW;

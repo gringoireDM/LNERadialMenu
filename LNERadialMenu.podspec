@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source       = { :git => "https://github.com/gringoireDM/LNERadialMenu.git", :tag => "0.0.1" }
 
-  s.source_files  = "./RadialMenu", "./RadialMenu/*.{h,m}", "./RadialMenu/**/*.{h,m}"
+  s.source_files  = "LNERadialMenu/RadialMenu", "LNERadialMenu/RadialMenu/*.{h,m}", "LNERadialMenu/RadialMenu/**/*.{h,m}"
 
 end
