@@ -8,10 +8,9 @@
 
 #import "LNERadialMenu.h"
 
-@interface LNERadialMenu(){
-	CGFloat maxW;
-}
+@interface LNERadialMenu()
 
+@property (nonatomic, assign) CGFloat maxW;
 @property (nonatomic, strong) NSMutableArray *elementsArray;
 
 @end
@@ -113,10 +112,10 @@
 	_elementsArray = [[NSMutableArray alloc] init];
 	_radialMenuView = [[UIView alloc] init];
 	
-	maxW = 0;
+	self.maxW = 0;
 	for(int i = 0; i < _numberOfButtons; i++){
 		UIButton *element = [self.dataSource radialMenu:self elementAtIndex:i];
-		if(maxW < element.frame.size.width) maxW = element.frame.size.width;
+		if(self.maxW < element.frame.size.width) self.maxW = element.frame.size.width;
 		element.userInteractionEnabled = YES;
 		element.alpha = 0;
 		element.tag = i;
@@ -127,7 +126,7 @@
 		[_radialMenuView addSubview:element];
 	}
 	
-	_radialMenuView.frame = CGRectMake(0, 0, _menuRadius*2.0+maxW, _menuRadius*2.0+maxW);
+	_radialMenuView.frame = CGRectMake(0, 0, _menuRadius*2.0+self.maxW, _menuRadius*2.0+self.maxW);
 	_radialMenuView.center = _centerPoint;
 	_radialMenuView.userInteractionEnabled = YES;
 	
@@ -229,7 +228,7 @@
 		} else {
 			
 			CGFloat d = -(self.radialMenuView.frame.origin.y +self.menuRadius);
-			startingAngle = asinf((d+maxW/2.0+5)/(self.menuRadius+radiusToAdd));
+			startingAngle = asinf((d+self.maxW/2.0+5)/(self.menuRadius+radiusToAdd));
 		}
 		
 		//END
@@ -253,7 +252,7 @@
 		fullCircle = NO;
 		
 		CGFloat d = -(self.radialMenuView.frame.origin.y +self.menuRadius);
-		startingAngle = asinf((d+maxW/2.0+5)/(self.menuRadius+radiusToAdd));
+		startingAngle = asinf((d+self.maxW/2.0+5)/(self.menuRadius+radiusToAdd));
 		
 		usableAngle = M_PI-2*startingAngle;
 		
@@ -290,7 +289,7 @@
 			usableAngle = 2*M_PI-virtualAngle-startingAngle;
 		} else {
 			CGFloat d = -(self.radialMenuView.frame.origin.y +self.menuRadius);
-			CGFloat virtualAngle = asinf((d+maxW/2.0+5)/(self.menuRadius+radiusToAdd));
+			CGFloat virtualAngle = asinf((d+self.maxW/2.0+5)/(self.menuRadius+radiusToAdd));
 			
 			usableAngle = M_PI-virtualAngle-startingAngle;
 		}
