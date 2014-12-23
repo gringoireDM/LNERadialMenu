@@ -80,7 +80,7 @@
 /*!
  The color of the background view. Default is black with 0.3 alpha.
  */
-@property (nonatomic, copy) UIColor *backgroundColor;
+@property (nonatomic, copy) UIColor *dimBackgroundColor;
 
 @property (nonatomic, weak) id<LNERadialMenuDelegate> delegate;
 @property (nonatomic, weak) id<LNERadialMenuDataSource> dataSource;
