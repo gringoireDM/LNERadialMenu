@@ -87,7 +87,7 @@
 	dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
 		[UIView animateWithDuration:0.25 animations:^{
 			self.radialMenuView.alpha = 0;
-			self.backgroundColor = [UIColor clearColor];
+            self.alpha = 0;
 		} completion:^(BOOL finished) {
 			[self.radialMenuView removeFromSuperview];
 			[self removeFromSuperview];
