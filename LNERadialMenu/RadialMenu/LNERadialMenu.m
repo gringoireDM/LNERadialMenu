@@ -177,12 +177,12 @@
 	[self showMenuWithCompletion:nil];
 }
 
--(UIColor *) backgroundColor{
-    if(!_backgroundColor){
-        _backgroundColor = [UIColor colorWithWhite:0 alpha:0.3];
+-(UIColor *) dimBackgroundColor{
+    if(!_dimBackgroundColor){
+        _dimBackgroundColor = [UIColor colorWithWhite:0 alpha:0.3];
     }
     
-    return _backgroundColor;
+    return _dimBackgroundColor;
 }
 
 -(void)showMenuWithCompletion:(void (^)())completion{
@@ -190,7 +190,7 @@
 	
 	[[[[UIApplication sharedApplication] delegate] window] addSubview:self];
 	[UIView animateWithDuration:0.25 animations:^{
-		self.backgroundColor = self.backgroundColor;
+		self.backgroundColor = self.dimBackgroundColor;
 	} completion:^(BOOL finished) {
 		[self addSubview:self.radialMenuView];
 		
