@@ -27,16 +27,16 @@
 	if(self){
 		centerPoint.y -= [[UIScreen mainScreen] applicationFrame].origin.y;
 		
-		//Fix the center point in case it is too near the corners of the screen
-		if(CGRectContainsPoint(CGRectMake(0, 0, 70, 70), centerPoint) && !CGPointEqualToPoint(centerPoint, CGPointZero)){
-			_centerPoint = CGPointMake(70, 70);
-		} else if(CGRectContainsPoint(CGRectMake(0, [[UIScreen mainScreen] applicationFrame].size.height-70, 70, 70), centerPoint)){
-			_centerPoint = CGPointMake(70, [[UIScreen mainScreen] applicationFrame].size.height-70);
-		} else if(CGRectContainsPoint(CGRectMake([[UIScreen mainScreen] applicationFrame].size.width-70, 0, 70, 70), centerPoint)){
-			_centerPoint = CGPointMake([[UIScreen mainScreen] applicationFrame].size.width-70, 70);
-		} else if(CGRectContainsPoint(CGRectMake([[UIScreen mainScreen] applicationFrame].size.width-70, [[UIScreen mainScreen] applicationFrame].size.height-70, 70, 70), centerPoint)){
-			_centerPoint = CGPointMake([[UIScreen mainScreen] applicationFrame].size.width-70, [[UIScreen mainScreen] applicationFrame].size.height-70);
-		} else
+//		//Fix the center point in case it is too near the corners of the screen
+//		if(CGRectContainsPoint(CGRectMake(0, 0, 70, 70), centerPoint) && !CGPointEqualToPoint(centerPoint, CGPointZero)){
+//			_centerPoint = CGPointMake(70, 70);
+//		} else if(CGRectContainsPoint(CGRectMake(0, [[UIScreen mainScreen] applicationFrame].size.height-70, 70, 70), centerPoint)){
+//			_centerPoint = CGPointMake(70, [[UIScreen mainScreen] applicationFrame].size.height-70);
+//		} else if(CGRectContainsPoint(CGRectMake([[UIScreen mainScreen] applicationFrame].size.width-70, 0, 70, 70), centerPoint)){
+//			_centerPoint = CGPointMake([[UIScreen mainScreen] applicationFrame].size.width-70, 70);
+//		} else if(CGRectContainsPoint(CGRectMake([[UIScreen mainScreen] applicationFrame].size.width-70, [[UIScreen mainScreen] applicationFrame].size.height-70, 70, 70), centerPoint)){
+//			_centerPoint = CGPointMake([[UIScreen mainScreen] applicationFrame].size.width-70, [[UIScreen mainScreen] applicationFrame].size.height-70);
+//		} else
 			_centerPoint = CGPointEqualToPoint(centerPoint, CGPointZero) ? self.center : centerPoint;
 		
 		
